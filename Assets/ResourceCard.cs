@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IScore
+public class ResourceCard : MonoBehaviour 
 {
-	Player myPlayer { get; }
-	float VictoryPoints { get; }
+	public ResourceTypes Type;
 }
