@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceCardDeck : Deck<ResourceTypes?, ResourceCard, ResourceCardDeck.MyContent> 
+public class ResourceCardDeck : Deck<ResourceType?, ResourceCard, ResourceCardDeck.MyContent> 
 {
 	[System.Serializable]
 	public class MyContent : ContentBaseClass
 	{
-		public ResourceTypes type;
+		public ResourceType type;
 	}
 
 	protected override void Awake()

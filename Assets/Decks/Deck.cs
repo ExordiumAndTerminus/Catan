@@ -46,7 +46,7 @@ public abstract class Deck<DataType,ObjectType,Content> : MonoBehaviour where Co
 			Quantities[myContent.item] = myContent;
 			for(int i=0; i<myContent.maxCount; i++)
 			{
-				Data.Enqueue(myContent.item); //Todo: Look at copy latter
+				Data.Enqueue(myContent.item); //Todo: Look at copy later
 			}
 		}
 		Shuffle();

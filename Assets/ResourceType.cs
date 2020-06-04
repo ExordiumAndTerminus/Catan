@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ResourceTypes
+public enum ResourceType
 {
 	Rock,
 	Wheat,

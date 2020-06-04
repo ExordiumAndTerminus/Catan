@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ResourceCard : MonoBehaviour 
 {
-	public ResourceTypes Type;
+	public ResourceType Type;
 }

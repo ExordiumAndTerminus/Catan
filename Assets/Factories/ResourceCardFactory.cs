@@ -8,14 +8,14 @@ public class ResourceCardFactory : MonoBehaviour
 	[System.Serializable]
 	protected struct Item
 	{
-		public ResourceTypes Type;
+		public ResourceType Type;
 		public GameObject prefab;
 	}
 	[SerializeField] List<Item> prefabs;
 
 	public static ResourceCardFactory Singleton { get; private set; }
 
-	protected Dictionary<ResourceTypes, GameObject> prefabByType;
+	protected Dictionary<ResourceType, GameObject> prefabByType;
 
 	private void Awake()
 	{
@@ -24,7 +24,7 @@ public class ResourceCardFactory : MonoBehaviour
 		Singleton = this;
 	}
 
-	public ResourceCard Generate(ResourceTypes type)
+	public ResourceCard Generate(ResourceType type)
 	{
 		return GameObject.Instantiate(prefabByType[type]).GetComponent<ResourceCard>();
 	}
