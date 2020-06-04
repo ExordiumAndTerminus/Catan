@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     public Color color;
     public string name;
     public float Score
@@ -16,7 +15,4 @@ public class Player : MonoBehaviour
             return FindObjectsOfType<GameObject>().SelectMany(G=> G.GetComponents<IScore>()).Where(jscore=>jscore!=null).Select(jscore=>jscore.VictoryPoints).Sum();
 		}
     }
-
-
-
 }
